@@ -37,6 +37,9 @@
     "url": "https://github.com/vizhub-core/vizhub-codemirror-theme/issues"
   },
   "homepage": "https://github.com/vizhub-core/vizhub-codemirror-theme#readme",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@lezer/highlight": "^1.2.1",
     "@uiw/codemirror-themes": "^4.23.7",
