@@ -1,0 +1,48 @@
+{
+  "name": "@vizhub/codemirror-theme",
+  "version": "0.1.0",
+  "description": "CodeMirror color theme for VizHub",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.esm.json",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vizhub-core/vizhub-codemirror-theme.git"
+  },
+  "keywords": [
+    "CodeMirror",
+    "coding",
+    "syntax",
+    "highlighting",
+    "editor",
+    "developers"
+  ],
+  "author": "Curran Kelleher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vizhub-core/vizhub-codemirror-theme/issues"
+  },
+  "homepage": "https://github.com/vizhub-core/vizhub-codemirror-theme#readme",
+  "dependencies": {
+    "@lezer/highlight": "^1.2.1",
+    "@uiw/codemirror-themes": "^4.23.7",
+    "codemirror": "^6.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
